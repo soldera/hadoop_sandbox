@@ -8,12 +8,13 @@ set -e
 
 HADOOP_OR_LATER_VERSION=3.2
 SPARK_VERSION=3.0.1
-FILE_NAME=spark-${SPARK_VERSION}-bin-hadoop${HADOOP_OR_LATER_VERSION}.tgz
+FILE_PREFIX=spark-${SPARK_VERSION}-bin-hadoop${HADOOP_OR_LATER_VERSION}
+FILE_NAME=${FILE_PREFIX}.tgz
 SPARK_HOME=${HOME}/spark
 mkdir -p ${SPARK_HOME}
 cd ${SPARK_HOME}
-wget https://downloads.apache.org/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_OR_LATER_VERSION}.tgz
+wget https://downloads.apache.org/spark/spark-${SPARK_VERSION}/${FILE_NAME}
 tar xzf ${FILE_NAME}
 rm ${FILE_NAME}
-mv spark-${SPARK_VERSION}-bin-hadoop${HADOOP_OR_LATER_VERSION}/* .
-rm -r spark-${SPARK_VERSION}-bin-hadoop${HADOOP_OR_LATER_VERSION}
+mv ${FILE_PREFIX}/* .
+rm -r ${FILE_PREFIX}

@@ -1,3 +1,5 @@
 .idea
 .bsp
 target
+metastore_db
+derby.log

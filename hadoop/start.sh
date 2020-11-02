@@ -17,3 +17,5 @@ ${HADOOP_HOME}/sbin/start-dfs.sh
 ${HADOOP_HOME}/bin/hdfs dfs -mkdir /user
 ${HADOOP_HOME}/bin/hdfs dfs -mkdir /user/${USER}
 
+# Start YARN
+${HADOOP_HOME}/sbin/start-yarn.sh
