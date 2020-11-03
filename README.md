@@ -55,3 +55,8 @@ Hadoop, Hive and Spark will be installed in your HOME directory.
 4. Run `./hive/copy_demo_dataset.sh` to copy the sample dataset to Hive's HDFS folder.
 4.1. Run `./hive/start_cli.sh` if you want to open the Beeline SQL CLI.
 4.2. Run `./hive/run_sql_demo.sh` to run the demonstration SQL DDL for table creation and also an example query.
+
+
+## Next Steps
+- Add Unit and Integration tests in the scala project.
+- Share bash script code (like JDK exports and such)
