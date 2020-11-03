@@ -45,7 +45,7 @@ Hadoop, Hive and Spark will be installed in your HOME directory.
 
 1. Make sure you have initializated spark (check out http://localhost:8080/)
 2. Make sure you have Java JDK and SBT installed.
-3. Run `./spark/submit_to_spark.sh`. The scala project will build, packaged and it'll be sent to the Spark.
+3. Run `./spark/submit_to_spark.sh`. The scala project will build, package and it'll be sent to Spark.
 
 ## Hive installation, setup and inicialization
 
